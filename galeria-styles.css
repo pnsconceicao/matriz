@@ -1,0 +1,65 @@
+.bloco-fotos, .bloco-fotos-papas, .bloco-fotos-parocos {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box; /* Evita que o padding cause transbordamento */
+    border: solid #0039A1;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+}
+
+.bloco-fotos-papas img {
+    width: 300px;
+    height: auto; 
+    max-width: 100%;
+    margin: 5px; 
+    padding: 2px;
+    border: solid #0039A1;
+}
+
+.bloco-fotos-parocos img {
+    height: 180px;
+    width: auto; 
+    max-width: 100%;
+    margin: 5px; 
+    padding: 2px;
+    border: solid #0039A1;
+}
+
+.bloco-fotos h3 {
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+}
+
+.bloco-fotos img {
+    width: auto; 
+    height: 400px;
+    max-width: 100%;
+    margin: 5px; 
+    padding: 2px;
+    border: solid #0039A1;
+}
+
+.titulo-galeria h2 {
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    .bloco-fotos img {
+        width: 310px;
+        height: auto; 
+        margin: 18px; 
+    }
+
+}
