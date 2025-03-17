@@ -1,0 +1,151 @@
+.liturgia-dominical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-liturgia-dominical {
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo-liturgia-dominical h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.titulo-liturgia-dominical h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+
+.bloco-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.bloco-fotos h3 {
+    font-size: 25px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+.bloco-fotos h4 {
+    font-size: 22px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    margin: 15px;
+    padding: 0;
+}
+.bloco-fotos h5 {
+    display: flex;
+    justify-items: left;
+    text-align: left;    
+    font-size: 15px;
+    font-style: italic;
+}
+.resp-aclamacao {
+    display: flex;
+    justify-content: left;
+}
+.resp-aclamacao p {
+    text-align: left;
+}
+
+.blocotexto-secretaria p  {
+    font-size: 20px;
+    text-align: justify;
+    justify-content: left;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+
+/* .blocosubtitulo-secretaria {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: solid #0039A1;
+    width: 100%;
+    margin: 30px;
+    padding-bottom: 0;
+} */
+
+.blocosubtitulo-secretaria {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocosubtitulo-secretaria h4 {
+    padding: 10px;
+    margin-bottom: 0;
+    margin: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+.blocopastorais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocopastorais  p {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: auto;
+    text-align: left;
+    padding: 15px;
+}
+
+.blocotexto-secretaria {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.subtitulo-geral {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: solid #0031A1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+}
+.subtitulo-geral h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 30px;
+}
