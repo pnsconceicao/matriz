@@ -500,6 +500,20 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 }
 
 
+
+.avisos-pag-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.avisos-pag-inicial h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
     
     
 .animacao-img-topo {

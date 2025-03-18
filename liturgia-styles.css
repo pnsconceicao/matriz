@@ -149,3 +149,17 @@
     padding: 5px;
     font-size: 30px;
 }
+
+
+
+
+.direitos-cnbb {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.direitos-cnbb h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
