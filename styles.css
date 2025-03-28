@@ -687,9 +687,17 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     .foto-matriz img {
         height: 250px;
     }
+    /* .container-corpo-grid div {
+        margin-left: 5%;
+        margin-right: 5%;
+    } */
     .container-corpo-grid div {
         margin-left: 5%;
         margin-right: 5%;
+    }
+    
+    .container-corpo-grid p {
+        font-size: 15px;
     }
 }
 
