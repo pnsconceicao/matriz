@@ -37,7 +37,7 @@
 
 .texto-historia-matriz-completo p {
     font-size: 28px;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 0;
     text-indent: 35px;
     line-height: 1.5;
@@ -87,7 +87,7 @@
     }
 
     .titulo-historia-matriz-1, .titulo-historia-matriz-2 {
-        font-size: 27px;
+        font-size: 20px;
     }
 
 }
