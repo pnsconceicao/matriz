@@ -91,6 +91,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
 }
 
 .blocosubtitulo-secretaria h4 {
@@ -105,6 +106,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+    margin: 20px;
+    padding: 15px; */
 }
 
 .blocopastorais  p {
@@ -148,6 +152,7 @@
     margin: 0;
     padding: 5px;
     font-size: 30px;
+    text-align: center;
 }
 
 
@@ -162,4 +167,44 @@
     font-size: 20px;
     margin: 0;
     padding: 0;
+}
+
+
+.calendario-mes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.calendario-mes h4{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+}
+
+.calendario-mes * {
+    border: solid black 2px;
+    /* margin: 10px; */
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.calendario-mes table {
+    margin-top: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+}
+
+.calendario-mes a {
+    color: rgb(173, 0, 0);
+    font-weight: 900;
+    text-decoration: none;
+    border: none;
+} 
+
+.blocopastorais {
+    margin-bottom: 50px;
 }
