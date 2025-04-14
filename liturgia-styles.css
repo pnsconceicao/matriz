@@ -196,15 +196,31 @@
 .calendario-mes table {
     margin-top: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+    border: black solid;
+}
+.calendario-mes th {
+    border: none;
 }
 
-.calendario-mes a {
-    color: rgb(173, 0, 0);
+.calendario-mes a, th, td {
+    color: black;
+    font-family: "Inter", sans-serif;
     font-weight: 900;
     text-decoration: none;
     border: none;
+    margin: 0;
 } 
+
+.important-date a {
+    color: rgb(218, 1, 1);
+}
 
 .blocopastorais {
     margin-bottom: 50px;
+}
+
+@media (max-width: 490px){
+    .calendario-mes a {
+        font-size: 25px;
+    }
 }

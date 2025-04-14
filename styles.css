@@ -184,8 +184,8 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .container-corpo-grid p {
@@ -261,7 +261,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
     display: none;
     width: auto;
-    height: 300px;
+    height: 250px;
     border-radius: 10%;
     border: solid blue;
     padding: 5px;
