@@ -52,6 +52,10 @@
     border: solid #0039A1;
 }
 
+.bloco-fotos img, a {
+    margin-bottom: 10px;
+}
+
 .bloco-fotos figure {
     /* border: black solid; */
     margin: 5px;
