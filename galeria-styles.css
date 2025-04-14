@@ -48,12 +48,9 @@
     height: auto;
     max-width: 100%;
     margin: 5px; 
+    margin-bottom: 10px;
     padding: 2px;
     border: solid #0039A1;
-}
-
-.bloco-fotos img, a {
-    margin-bottom: 10px;
 }
 
 .bloco-fotos figure {
