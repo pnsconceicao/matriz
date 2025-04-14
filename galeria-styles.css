@@ -4,7 +4,7 @@
     justify-content: center; 
     align-items: center;
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 0;
     box-sizing: border-box; /* Evita que o padding cause transbordamento */
     /* border: solid #0039A1;
     background-color: white;
@@ -29,6 +29,11 @@
     margin-left: 20px;
     padding: 2px;
     border: solid #0039A1;
+}
+
+.bloco-fotos a {
+    margin: 0;
+    padding: 0;
 }
 
 .bloco-fotos h3 {
@@ -85,7 +90,7 @@
     .bloco-fotos img {
         width: 310px;
         height: auto; 
-        margin: 14px; 
+        margin: 18px; 
         margin-bottom: 10px;
     } 
 
@@ -101,7 +106,7 @@
 
 @media (max-width: 400px){
     .bloco-fotos img {
-        width: 100%;
+        width: 270px;
         height: auto; 
         margin: 0; 
         margin-bottom: 10px;
