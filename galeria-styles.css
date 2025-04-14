@@ -111,6 +111,7 @@
         width: 270px;
         height: auto; 
         margin: 0; 
+        margin-bottom: 10px;
     }
     .bloco-fotos figcaption {
         margin-top: 0;
