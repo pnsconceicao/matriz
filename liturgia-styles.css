@@ -223,12 +223,25 @@
     .calendario-mes a {
         font-size: 15px;
         margin: 2px;
+        padding: 2px;
     }
     .calendario-mes  td {
-        background-color: #0031A1;
+        padding:  5px 0;
+
+        
+    }
+    .calendario-mes  tr {
         padding: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
+
+        
+    }
+    .calendario-mes  th {
+        padding: 8px;
+
+        
+    }
+    .calendario-mes  table {
+        padding: 3px;
         
     }
 }
