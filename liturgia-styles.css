@@ -221,6 +221,14 @@
 
 @media (max-width: 490px){
     .calendario-mes a {
-        font-size: 25px;
+        font-size: 15px;
+        margin: 2px;
+    }
+    .calendario-mes  td {
+        background-color: #0031A1;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
     }
 }
