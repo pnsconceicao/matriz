@@ -226,8 +226,43 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     border: solid rgb(144, 61, 10);
     padding: 5px;
     margin-bottom: 5px;
+   
 }
-
+.foto-matriz-dentro {
+    position: relative;
+    text-align: center;
+}
+.foto-matriz-dentro img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+    width: auto;
+    height: 450px;
+    border-radius: 10%;
+    border: solid rgb(144, 61, 10);
+    padding: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    text-align: center;
+}
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, 65%);
+    color: white;
+    width: 500px;
+    padding: 5px 10px;
+}
+.texto-sobre-imagem h1 {
+    font-size: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
 .imagens-inicio figure {
     display: flex;
     align-items: center;
