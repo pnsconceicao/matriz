@@ -47,7 +47,7 @@
     
 }
 
-.bloco-capelas img {
+.bloco-capelas img, video {
     justify-content: center;
     align-items: center;
     width: 550px;
@@ -100,7 +100,7 @@
     width: 100%;
 }
 
-.bloco-fotos img {
+.bloco-fotos img, video {
     width: 400px;
     height: auto; 
     max-width: 100%;
@@ -151,7 +151,7 @@
     width: 100%;
 }
 
-.bloco-grupos img {
+.bloco-grupos img, video {
     width: 600px;
     height: auto; 
     max-width: 100%;
@@ -178,7 +178,7 @@
 }
 
 @media (max-width: 800px){
-    .bloco-fotos img {
+    .bloco-fotos img, video {
         width: 280px;
         height: auto; 
         margin: 18px;
