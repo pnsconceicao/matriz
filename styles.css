@@ -33,10 +33,11 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 
 .cabecalho-flex {
     display: flex;
-    background-color: #0039A1;
     justify-content: center;
     align-items: center;
-    margin: 3px;
+    flex-direction: column;
+    margin: 0;
+    background-color: #0039A1;
 }
 .cabecalho-flex ul {
     list-style: none;
@@ -56,6 +57,30 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     padding: 2px;
 }
 
+.logo-paroquia-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 209, 164);
+}
+
+.logo-paroquia-cabecalho img{
+    width: 200px;
+    padding: 15px 0 10px 0;
+}
+
+.logo-paroquia-cabecalho p {
+    margin: 5px 3px;
+    padding: 5px;
+    text-align: left;
+    width: 350px;
+    color: #0039A1;
+    font-family: "Inter", sans-serif;
+    text-shadow: 4px 4px 2px rgba(241, 217, 0, 0.7);
+    font-weight: 700;
+    font-size: 35px;
+}
+
 .item-nav-cabecalho a {
     font-family: Inter, sans-serif;
     font-weight: 700;
@@ -66,6 +91,13 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     text-decoration: none;
 }
 
+.item-nav-cabecalho p {
+    display: none;
+}
+
+.logo-cabecalho {
+    display: none;
+}
 
 
 
@@ -310,21 +342,6 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     margin-bottom: 25px;
 }
 
-
-.titulo-ata-instalacao {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 1px;
-}
-
-.texto-ata-instalacao {
-    font-size: 22px;
-    height: auto;
-    text-align: center;
-    
-}
-
 .ata-instalacao-paroquia p {
     text-align: center;
     font-family: "Inter", sans-serif;
@@ -433,12 +450,56 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 
 
 
+.bloco-lista-opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bloco-lista-opcoes a {
+    text-decoration: none;
+    color: black;
+}
+
+.bloco-lista-opcoes  h3 {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+    justify-content: center;
+    background-color: rgb(194, 157, 13);
+    /* margin-bottom: 20px; */
+    max-width: 800px;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.bloco-lista-opcoes  p {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 900px;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+
 
 .rodape-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3px;
+    margin: 0;
     background-color: #0039A1;
 }
 
@@ -450,7 +511,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3px;
+    margin: 0;
     background-color: #0039A1;
 }
 
@@ -463,6 +524,22 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 }
 
 
+
+.bloco-titulo-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-pagina h2 {
+    font-size: 35px;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-family: "Inter", serif;
+    color: #00215f;
+}
 
 
 .titulo-paroquia{
@@ -489,9 +566,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     width: 600px;
 }
 
-.item-nav-cabecalho p {
-    display: none;
-}
+
 
     
 
@@ -565,8 +640,8 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
               opacity: 0;
     }
     100% {
-              transform: translateY(0px);
-              opacity: 1;
+        transform: translateY(0px);
+        opacity: 1;
     }
   }
 
@@ -606,140 +681,86 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     font-style: underline;
 }
 
-@media (max-width: 650px){
-    .container-corpo-grid div {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .titulo-paroquia h1 {
-        margin: 5px 8px;
-        padding: 8px;
-    }
 
 
 
 
-    .foto-padroeiros-cima img {
-        display: none;
-    }
-    
-    .foto-padroeiros-cima figcaption {
-        display: none;
-    }
-
-    .foto-padroeiros-baixo img {
-        display: block;
-        width: 250px;
-        height: auto;
-    }
-    
-    .foto-padroeiros-baixo figcaption {
-        display: block;
-    }
-    .video-youtube iframe {
-        height: 170px;
-        width: 365px;
-    }
-
-
-
-
-    .titulo-paroquia h1 {
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-
-
-
-
-    .rodape-celular li, nav, .rodape-flex nav {
-        display: block;
-    }
-    .item-rodape {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    .item-nav-rodape {
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-    .item-nav-rodape ul * a {
-        font-size: 20px;
-    }
-    .item-nav-rodape > .rodape-celular {
-        grid-template-columns: 1fr 1fr;
-    }
-    .rodape-flex-pc {
-        display: none;
-    }
-
-
-
-
-    .item {
-        display: none;
-    }
-    .cabecalho-flex {
-        justify-content: left;
-        align-items: left;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .item-nav-cabecalho {
-        padding-left: 10px;
-    }
-    .item-nav-cabecalho img {
-        width: 75px;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-    .item-nav-cabecalho p {
-        display: flex;
-        justify-content: left;
-        align-items: left;
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
-        font-weight: 800;
-        color: white;
-    }
-
-
-
-    .container-pagina-completo-grid div * .oioioi{
-        padding: 0;
-        margin-top: 0;
-        width: 300px;
-    }
-
-    .foto-matriz img {
-        height: 280px;
-    }
+.titulo-paragrafo-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (max-width: 540px){
-    .foto-matriz img {
-        height: 250px;
-    }
-    /* .container-corpo-grid div {
-        margin-left: 5%;
-        margin-right: 5%;
-    } */
-    .container-corpo-grid div {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
+.titulo-paragrafo-texto h2 {
+    color: #00215f;
+    text-align: left;
+    margin: 15px;
+    font-size: 25px;
+    height: auto;
 }
 
-@media (max-width: 430px){
-    .foto-matriz img {
-        height: 250px;
-    }
+.titulo-paragrafo-texto p {
+    color: #000e27;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-indent: 35px;
+    line-height: 1.5;
+    font-family: sans-serif;
 }
+
+.titulo-paragrafo-texto h3 a {
+    color: #000e27;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.foto-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-texto figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    margin-bottom: 50px;
+}
+
+.foto-texto img {
+    width: 400px;
+    margin: 5px;
+    border: solid #daa520 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-texto figcaption {
+    margin-left: 20px;
+    color: #000e27;
+    font-size: 20px;
+}
+
+
+
+
+.barra-circular-navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-circular-navegacao img {
+    margin: 30px;
+    border: #00215f solid 1px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+
 
 @media (max-width: 980px){
     .item {
@@ -771,6 +792,13 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
         color: white;
     }
 
+    .computer-logo {
+        display: none;
+    }
+
+    .logo-cabecalho {
+        display: block;
+    }
 
 
 /* 
@@ -860,5 +888,146 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
         padding: 5px;
         justify-content: center;
         align-items: center;
+    }
+}
+
+
+
+@media (max-width: 650px){
+    .container-corpo-grid div {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo-paroquia h1 {
+        margin: 5px 8px;
+        padding: 8px;
+    }
+
+
+
+
+    .foto-padroeiros-cima img {
+        display: none;
+    }
+    
+    .foto-padroeiros-cima figcaption {
+        display: none;
+    }
+
+    .foto-padroeiros-baixo img {
+        display: block;
+        width: 250px;
+        height: auto;
+    }
+    
+    .foto-padroeiros-baixo figcaption {
+        display: block;
+    }
+    .video-youtube iframe {
+        height: 170px;
+        width: 365px;
+    }
+
+
+
+
+    .titulo-paroquia h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+
+
+
+
+    .rodape-celular li, nav, .rodape-flex nav {
+        display: block;
+    }
+    .item-rodape {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .item-nav-rodape {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .item-nav-rodape ul * a {
+        font-size: 20px;
+    }
+    .item-nav-rodape > .rodape-celular {
+        grid-template-columns: 1fr 1fr;
+    }
+    .rodape-flex-pc {
+        display: none;
+    }
+
+
+
+    .item {
+        display: none;
+    }
+    .cabecalho-flex {
+        justify-content: left;
+        align-items: left;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .item-nav-cabecalho {
+        padding-left: 10px;
+    }
+    .item-nav-cabecalho img {
+        width: 75px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .item-nav-cabecalho p {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 800;
+        color: white;
+    }
+
+
+
+    .container-pagina-completo-grid div * .oioioi{
+        padding: 0;
+        margin-top: 0;
+        width: 300px;
+    }
+
+    .foto-matriz img {
+        height: 280px;
+    }
+}
+
+
+
+@media (max-width: 540px){
+    .foto-matriz img {
+        height: 250px;
+    }
+    /* .container-corpo-grid div {
+        margin-left: 5%;
+        margin-right: 5%;
+    } */
+    .container-corpo-grid div {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+
+
+
+@media (max-width: 430px){
+    .foto-matriz img {
+        height: 250px;
     }
 }

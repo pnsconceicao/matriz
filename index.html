@@ -6,7 +6,7 @@
     <title>Paróquia N. Sra. da Conceição</title>
     <link rel="icon" type="image/png" href="logos-fotos/LOGOdaPAROQUIA-PNG.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="historia-matriz-styles.css">
+    <!-- <link rel="stylesheet" href="historia-matriz-styles.css"> -->
     <link rel="stylesheet" href="galeria-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +14,21 @@
 </head>
 <body>
     <div class="container-pagina-completo-grid">
-
+        <div class="logo-paroquia-cabecalho">
+            <a class="computer-logo" href="index.html"><img src="logos-fotos/LOGOdaPAROQUIA-PNG.png"></a>
+            <p class="computer-logo">PARÓQUIA <br>NOSSA SENHORA <br>DA CONCEIÇÃO</p>
+        </div>
         <header class="cabecalho-flex">
             <ul class="item-nav-cabecalho">
-                <li><p>PARÓQUIA <br>NOSSA SENHORA <br>DA CONCEIÇÃO</p></li>
-                <li class="logo-cabecalho"><a href="index.html"><img src="logos-fotos/LOGOdaPAROQUIA-PNG.png"></a></li>
+                <ul class="item-nav-cabecalho">
+                    <li><a class="logo-cabecalho" href="index.html"><img src="logos-fotos/LOGOdaPAROQUIA-PNG.png"></a></li>
+                    <li><p>PARÓQUIA <br>NOSSA SENHORA <br>DA CONCEIÇÃO</p></li>
                 <li class="item"><a href="index.html">Início</a></li>
                 <li class="item">
                     <ul>
                         <li id="item-menu"><a href="sobre.html">Sobre</a>
                             <ul id="item-submenu">
                                 <li><a href="historia-matriz.html">História</a></li><hr>
-                                <!-- <li><a href="sacramentos.html">Sacramentos</a></li><hr> -->
                                 <li><a href="sucessao.html">Sucessão</a><hr>
                                             <ul id="item-submenu-sucessao">
                                                 <li><a href="parocos.html">Párocos</a></li>
@@ -88,43 +91,24 @@
                     </ul>
                 </li>
                 <li class="item"><a href="documentos.html">Documentos</a></li>
-                <li class="logo-cabecalho"><img src="logos-fotos/LOGOdaPASCOM-PNG.png"></li>
-                 
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()">
-                        <img class="icon" src="logos-fotos/menu_white_36dp.svg" alt="">
-                    </button>
-    
-                </div>
             </ul>
-
-
-
-            <!-- <div class="mobile-menu">
-                <ul>
-                    <li class="nav-item"><a href="index.html">Início</a></li>
-                    <li class="nav-item"><a href="index.html">Início</a></li>
-                    <li class="nav-item"><a href="index.html">Início</a></li>
-                </ul> -->
-
-
-
-
-            
-            </header>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="logos-fotos/menu_white_36dp.svg" alt="">
+                </button>
+            </div>
+        </ul>
+    </header>
             <div class="mobile-menu">
                 <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
                     <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
                     <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
                     <li class="nav-item"><a href="capelas.html" class="nav-link">Capelas</a></li>
                     <li class="nav-item"><a href="pastoral.html" class="nav-link">Pastoral</a></li>
                     <li class="nav-item"><a href="documentos.html" class="nav-link">Documentos</a></li>
-                    <!-- <li class="nav-item"><a href="sacramentos.html" class="nav-link">Sacramentos</a></li> -->
                 </ul>
             </div>
-        <div class="titulo-paroquia">
-            <h1>Paróquia Nossa Senhora da Conceição</h1>
-        </div>
         
         <div class="container-corpo-grid">
             <div>
@@ -146,9 +130,9 @@
                     <figcaption>São José<br>CO-PADROEIRO</figcaption>
                 </figure>
             </div>
-            <div class="texto-historia-matriz-completo">
-                <h2 class="titulo-ata-instalacao">Ata de Instalação da Paróquia Nossa Senhora da Conceição</h2>
-                <p class="texto-historia-matriz-1">"Às 16 horas do dia 03 de fevereiro (dia de São Brás) de 1963, nesta Igreja Matriz de Nossa Senhora da Conceição, estando presente uma grande multidão de fiéis e os clérigos José de Sousa Neto e João Cartaxo Andriola, alguns seminaristas e várias autoridades civis, o Rev. Mo. Sr. Côn. Francisco Sitônio Vigário ecônomo de nova Paróquia por ordem do Ex. Mo. Senhor Bispo Diocesano, Dom Zacarias Rolim de Moura, o mesmo Rev. Mo. Sr. Côn. Francisco Sitônio dirigiu a palavra aos fiéis prresentes, expondo a necessidade, a importância e a responsabilidade da instalação desta Paróquia de Nossa Senhora da Conceição de Cachoeira dos Índios. Em seguida, celebrou-se solenemente o Santo Sacrifício da Missa, com a participação dos fiéis, em ação de graças pela criação da nova Paróquia. Fez-se também a procissão com a Imagem de Nossa Senhora da Conceição, encerrando-se com a benção do SS. Sacramento. Não havendo nada mais a relatar, eu, Carmil Vieira dos Santos, por ordem do Rev. Mo. Sr. Côn. Francisco Sitônio, fiz a presente Ata, que lida e assinada pelas autoridades presentes, será registrada no Livro de Tombo desta nova Paróquia de Cachoeira dos Índios. Cachoeira dos Índios, 03 de fevereiro de 1963. Carmil Vieira dos Santos - Secretário Ad-Doc. Cônego Francisco Sitônio - Vigário ecônomo".</p>
+            <div class="titulo-paragrafo-texto">
+                <h2>Ata de Instalação da Paróquia Nossa Senhora da Conceição</h2>
+                <p>"Às 16 horas do dia 03 de fevereiro (dia de São Brás) de 1963, nesta Igreja Matriz de Nossa Senhora da Conceição, estando presente uma grande multidão de fiéis e os clérigos José de Sousa Neto e João Cartaxo Andriola, alguns seminaristas e várias autoridades civis, o Rev. Mo. Sr. Côn. Francisco Sitônio Vigário ecônomo de nova Paróquia por ordem do Ex. Mo. Senhor Bispo Diocesano, Dom Zacarias Rolim de Moura, o mesmo Rev. Mo. Sr. Côn. Francisco Sitônio dirigiu a palavra aos fiéis prresentes, expondo a necessidade, a importância e a responsabilidade da instalação desta Paróquia de Nossa Senhora da Conceição de Cachoeira dos Índios. Em seguida, celebrou-se solenemente o Santo Sacrifício da Missa, com a participação dos fiéis, em ação de graças pela criação da nova Paróquia. Fez-se também a procissão com a Imagem de Nossa Senhora da Conceição, encerrando-se com a benção do SS. Sacramento. Não havendo nada mais a relatar, eu, Carmil Vieira dos Santos, por ordem do Rev. Mo. Sr. Côn. Francisco Sitônio, fiz a presente Ata, que lida e assinada pelas autoridades presentes, será registrada no Livro de Tombo desta nova Paróquia de Cachoeira dos Índios. Cachoeira dos Índios, 03 de fevereiro de 1963. Carmil Vieira dos Santos - Secretário Ad-Doc. Cônego Francisco Sitônio - Vigário ecônomo".</p>
                 <h3><I>Leia a história completa <strong><ins><a href="historia-matriz.html">AQUI</a></ins></strong>.</I></h3>
             </div>
             <div>
@@ -169,14 +153,47 @@
                     <h1>Tempo da Páscoa</h1>
                 </div>
             </div> -->
-            <div class="avisos-pag-inicial"><h2>AVISOS IMPORTANTES</h2> </div>
-            <div class="bloco-fotos">  
-                <img src="avisos-fotos/ArteComunicadoUsoDeImagem2025.png" alt="">
-                <img src="avisos-fotos/ArteHabemusPapam2025.png" alt="">
-                <!-- <img src="avisos-fotos/ARTE-SANTAMISSA-QUINTA-EUCARISTICA.png" alt=""> -->
-                <!-- <img src="avisos-fotos/ARTE-dizimo.jpeg" alt=""> -->
-                <!-- <img src="avisos-fotos/ARTE-1A-SEXTA-FEIRA-MATRIZ-E-BX-GRANDE-abril-2025.j             peg" alt=""> -->
-                <a href="https://whatsapp.com/channel/0029VbAq1zk84OmEd4OKgw3t"><img src="avisos-fotos/QrCodeCanalWhatsAppParoquia.jpeg" alt=""></a>
+            <div class="foto-texto">  
+                <figure>
+                    <a href=""><img src="logos-fotos/ArteGaleriaPascomJunho2025.png" alt=""></a>
+                    <figcaption>A Galeria PASCOM é uma página em nosso site destinada a Pastoral da Comunicação onde os membros disponibilizam as fotos e vídeos que foram registrados em diversos eventos de nossa Paróquia para que todos possam, de forma fácil e acessível, baixar.</figcaption>
+                </figure>
+                <figure>
+                    <figcaption>Acesse aqui nessa página a Liturgia Diária (Leituras, Salmo e Evangelho), de acordo com a CNNB, disponibilizado pela nossa Paróquia pelas Pastorais da Comunicação e Liturgia.</figcaption>
+                    <a href="liturgia.html"><img src="logos-fotos/ArteLiturgiaDiariaJulho2025.png" alt=""></a>
+                </figure>
+            </div>
+
+            <div class="titulo-paragrafo-texto">
+                <h2>Diversos</h2>
+            </div>
+            <div class="barra-circular-navegacao">
+                <figure>
+                    <a href="capelas.html"><img src="logos-fotos/iconeIgrejaCapelaSiteMatriz.png" alt=""></a>
+                    <figcaption>Capelas</figcaption>
+                </figure>
+                <figure>
+                    <a href="galeria.html"><img src="logos-fotos/iconeCameraSiteMatriz.png" alt=""></a>
+                    <figcaption>Galeria PASCOM</figcaption>
+                </figure>
+                <figure>
+                    <a href="historia-matriz.html"><img src="logos-fotos/iconeLivroHistoriaSiteMatriz.png" alt=""></a>
+                    <figcaption>História da Matriz</figcaption>
+                </figure>
+            </div>
+            <div class="barra-circular-navegacao">
+                <figure>
+                    <a href="noticias.html"><img src="logos-fotos/iconeJornalSiteMatriz.png" alt=""></a>
+                    <figcaption>Notícias</figcaption>
+                </figure>
+                <figure>
+                    <a href="pastoral.html"><img src="logos-fotos/iconePastoralSiteMatriz.png" alt=""></a>
+                    <figcaption>Pastoral</figcaption>
+                </figure>
+                <figure>
+                    <a href="secretaria.html"><img src="logos-fotos/iconeSecretariaSiteMatriz.png" alt=""></a>
+                    <figcaption>Secretaria</figcaption>
+                </figure>
             </div>
             
             <!-- <div class="titulo-video-youtube">
