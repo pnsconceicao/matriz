@@ -59,6 +59,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 
 .logo-paroquia-cabecalho {
     display: flex;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     background-color: rgb(213, 209, 164);
@@ -69,10 +70,11 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     padding: 15px 0 10px 0;
 }
 
-.logo-paroquia-cabecalho p {
+.logo-paroquia-cabecalho p  {
     margin: 5px 3px;
     padding: 5px;
     text-align: left;
+    font-style: none;
     width: 350px;
     color: #0039A1;
     font-family: "Inter", sans-serif;
@@ -759,6 +761,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     width: 150px;
     border-radius: 100%;
 }
+
 
 
 
