@@ -735,6 +735,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 .foto-texto img {
     width: 400px;
     margin: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
     border: solid #daa520 2px;
     justify-content: center;
     align-items: center;
@@ -746,6 +747,14 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     font-size: 20px;
 }
 
+.cartaz-liturgia-smartphone img {
+    display: none;
+}
+
+.cartaz-liturgia-smartphone figcaption {
+    display: none;
+}
+
 
 
 
@@ -755,11 +764,26 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     align-items: center;
 }
 
+.barra-circular-navegacao figure{
+    margin-left: 0;
+}
+
 .barra-circular-navegacao img {
     margin: 30px;
-    border: #00215f solid 1px;
     width: 150px;
+    margin: 5px;
     border-radius: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+}
+
+.barra-circular-navegacao figcaption{
+    border: black solid 1px;
+    color: #00215f;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 3px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
 }
 
 
@@ -891,6 +915,37 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
         padding: 5px;
         justify-content: center;
         align-items: center;
+    }
+
+
+    .cartaz-liturgia-computer img {
+        display: none;
+    }
+
+    .cartaz-liturgia-computer figcaption {
+        display: none;
+    }
+    .cartaz-liturgia-smartphone img {
+        display: block;
+    }
+
+    .cartaz-liturgia-smartphone figcaption {
+        display: block;
+    }
+
+    .foto-texto figure {
+        flex-direction: column;
+        width: 380px;
+        margin-bottom: 50px;
+    }
+
+    .foto-texto figcaption {
+        margin-top: 20px;
+    }
+
+    .foto-texto img {
+        width: 400px;
+        margin: 5px;
     }
 }
 
