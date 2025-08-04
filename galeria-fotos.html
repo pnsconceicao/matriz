@@ -119,63 +119,17 @@
                     <h2>GALERIA DE FOTOS</h2>
                 </div>
             </div>
-            <div class="bloco-fotos">
-                <h3>SEMANA SANTA 2025</h3>
-                <h3>Sábado de Aleluia - Vigília Pascal na noite Santa</h3>
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO0.JPG" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO1.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO2.JPG" alt="">
-                <!-- <img src="galeria-fotos/VigiliaSabSanto2025FOTO3.HEIC" alt=""> -->
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO4.JPG" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO5.JPG" alt="">
-                <!-- <img src="galeria-fotos/VigiliaSabSanto2025FOTO6.JPG" alt=""> -->
-                <!-- <img src="galeria-fotos/VigiliaSabSanto2025FOTO7.HEIC" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO8.HEIC" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO9.HEIC" alt=""> -->
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO10.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO11.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO12.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO13.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO14.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO15.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO16.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO17.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO18.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO19.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO20.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO21.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO22.jpg" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO23.JPG" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO24.jpg" alt="">
-                <!-- <img src="galeria-fotos/VigiliaSabSanto2025FOTO25.HEIC" alt=""> -->
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO26.JPG" alt="">
-                <!-- <img src="galeria-fotos/VigiliaSabSanto2025FOTO27.HEIC" alt=""> -->
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO28.JPG" alt="">
-                <!-- <img src="galeria-fotos/VigiliaSabSanto2025FOTO29.HEIC" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO31.HEIC" alt="">
-                <img src="galeria-fotos/VigiliaSabSanto2025FOTO32.HEIC" alt=""> -->
-                <h3>Domingo de ramos da Paixão do Senhor</h3>
-                <img src="galeria-fotos/SANTA-MISSA-RAMOS-1.jpeg" alt="">
-                <img src="galeria-fotos/SANTA-MISSA-RAMOS-2.jpeg" alt="">
-                <img src="galeria-fotos/SANTA-MISSA-RAMOS-5.jpeg" alt="">
-                <img src="galeria-fotos/SANTA-MISSA-RAMOS-3.jpeg" alt="">
-                <img src="galeria-fotos/SANTA-MISSA-RAMOS-4.jpeg" alt="">
-
-                <h3>QUARESMA DA IGREJA 2025</h3>
-                <h3>Mutirão de confissões</h3>
-                <img src="galeria-fotos/FOTO-1-MUTIRAO-CONFISSOES-2025.jpeg" alt="">
-                <img src="galeria-fotos/FOTO-2-MUTIRAO-CONFISSOES-2025.jpeg" alt="">
-                <img src="galeria-fotos/FOTO-PAROCOS-MUTIRAO-CONFISSOES-2025.jpeg" alt="">
-                <img src="galeria-fotos/FOTO-3-MUTIRAO-CONFISSOES-2025.jpeg" alt="">
-                <h3>Solenidade de São José | Co-Padroeiro da Matriz</h3>
-                <img src="galeria-fotos/FOTO-IMAGEM-SOLENIDADE-S.JOSE.jpeg" alt="">
-                <img src="galeria-fotos/FOTO-EUCARISTIA-SOLENIDADE-S.JOSE.jpeg" alt="">
-                <img src="galeria-fotos/FOTO-CALICE-SOLENIDADE-S.JOSE.jpeg" alt="">
-                <img src="galeria-fotos/FOTO-ALTAR-SOLENIDADE-S.JOSE.jpeg" alt="">
-                <h3>Quarta-Feira de Cinzas</h3>
-                <img src="galeria-fotos/CINZAS-Eucaristia-S-Missa-2025.jpeg" alt="">
-                <img src="galeria-fotos/CINZAS-Bencao-S-Missa-2025.jpeg" alt="">
-                <img src="galeria-fotos/CINZAS-Distribuicao-S-Missa-2025.jpeg" alt="">
+            <div id="FotosEvento" class="bloco-fotos">
+                <select name="Event" onchange="OnEventUpdate(event)">
+                    <option value="0">Semana Santa 2025</option>
+                    <option value="1">Domingo de ramos da Paixão do Senhor</option>
+                    <option value="2">QUARESMA DA IGREJA 2025</option>
+                    <option value="3">Multirão de confissões</option>
+                    <option value="4">Solenidade de São José | Co-Padroeiro da Matriz</option>
+                    <option value="5">Quarta-Feira de Cinzas</option>
+                </select>
+                <h3 id="OptionSelected"></h3>
+                <h3 id="NomeDoEvento">SEMANA SANTA 2025</h3>
             </div>
         </div>
         
@@ -225,6 +179,6 @@
         </footer>
     </div>
     <script src="script.js"></script>
-
+    <script src="FiltrarGaleria.js"></script>
 </body>
 </html>
