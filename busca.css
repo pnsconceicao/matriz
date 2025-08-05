@@ -6,6 +6,7 @@
     margin: 40px auto;
     padding: 20px;
     text-align: center;
+    flex-direction: column;
 }
 
 .busca-container h2 {

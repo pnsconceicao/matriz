@@ -371,7 +371,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 #item-submenu {
     display: none;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(224, 231, 255);
     padding: 10px;
     margin: 0;
     list-style: none;

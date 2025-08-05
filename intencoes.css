@@ -1,5 +1,8 @@
 /* intencoes.css */
 
+.container-corpo-grid .intencoes-container{
+    align-items: center;
+}
 .intencoes-container {
     padding: 20px;
     max-width: 800px;
@@ -12,6 +15,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
 }
 
 /* Garante que o formulário e a lista não fiquem excessivamente largos */
