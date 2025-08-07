@@ -19,7 +19,9 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     /* border: black solid; */
 }
 
-.container-pagina-completo-grid div * .oioioi{
+.container-pagina-completo-grid div * .o-maria{
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     padding: 3px;
     width: 100%;
@@ -762,14 +764,11 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.barra-circular-navegacao figure{
-    margin-left: 0;
+    margin-bottom: 40px;
 }
 
 .barra-circular-navegacao img {
-    margin: 30px;
+    
     width: 150px;
     margin: 5px;
     border-radius: 100%;
@@ -1053,7 +1052,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 
 
 
-    .container-pagina-completo-grid div * .oioioi{
+    .container-pagina-completo-grid div * .o-maria{
         padding: 0;
         margin-top: 0;
         width: 300px;

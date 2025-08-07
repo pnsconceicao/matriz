@@ -29,3 +29,7 @@ h1 {
     background-color: rgb(194, 157, 13);
     margin-bottom: 10px;
 }
+
+select {
+    background-color: aqua;
+}

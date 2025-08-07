@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de fotos P.N.S.C</title>
+    <title>O quanto você conhece a Paróquia?</title>
     <link rel="icon" type="image/png" href="logos-fotos/LOGOdaPAROQUIA-PNG.png">
+    <link rel="stylesheet" href="quizParoquia.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="galeria-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="container-pagina-completo-grid">
         <div class="logo-paroquia-cabecalho">
             <a class="computer-logo" href="index.html"><img src="logos-fotos/LOGOdaPAROQUIA-PNG.png"></a>
-            <p class="computer-logo">PARÓQUIA <br>NOSSA SENHORA <br>DA CONCEIÇÃO</p>
+            <a class="computer-logo" href="index.html"><p>PARÓQUIA <br>NOSSA SENHORA <br>DA CONCEIÇÃO</p></a>
         </div>
         <header class="cabecalho-flex">
             <ul class="item-nav-cabecalho">
@@ -105,27 +105,56 @@
                     <li class="nav-item"><a href="documentos.html" class="nav-link">Documentos</a></li>
                 </ul>
             </div>
-
+        
         <div class="container-corpo-grid">
-            <div class="bloco-titulo-galeria">
-                <div class="titulo-galeria">
-                    <h2>GALERIA DE FOTOS</h2>
+            <h1>QUIZ</h1>
+            <h2>O quanto você conhece a Paróquia?</h2>
+
+            <form id="quizForm">
+                <div class="perguntaQuiz">
+                    <p>1. Qual a data de criação e instalação?</p>
+                        <label><input type="radio" name="q1" value="a"> 03/02/1963</label><br>
+                        <label><input type="radio" name="q1" value="b"> 08/12/1963</label><br>
+                        <label><input type="radio" name="q1" value="c"> 25/12/1963</label><br>
+                        <label><input type="radio" name="q1" value="d"> 03/02/1973</label>
                 </div>
-            </div>
-            <div id="FotosEvento" class="bloco-fotos">
-                <select name="Event" onchange="OnEventUpdate(event)">
-                    <option value="-1">Selecionar</option>
-                    <option value="0">Sábado de Aleluia</option>
-                    <option value="1">Domingo de Ramos 2025</option>
-                    <option value="2">Quaresma da Igreja 2025</option>
-                    <option value="3">Multirão de confissões 2025</option>
-                    <option value="4">Solenidade de São José 2025</option>
-                    <option value="5">Quarta-Feira de Cinzas</option>
-                    <option value="6">Novo Sacrário</option>
-                </select>
-                <h3 id="OptionSelected"></h3>
-                <h3 id="NomeDoEvento"></h3>
-            </div>
+
+                <div class="perguntaQuiz">
+                    <p>2. Qual o número da Igreja Matriz?</p>
+                        <label><input type="radio" name="q2" value="a"> 63</label><br>
+                        <label><input type="radio" name="q2" value="b"> 44</label><br>
+                        <label><input type="radio" name="q2" value="c"> 50</label><br>
+                        <label><input type="radio" name="q2" value="d"> s/n</label><br>
+                </div class="perguntaQuiz">
+
+                <div class="perguntaQuiz">
+                    <p>3. Qual o dia e mês da festa da nossa Padroeira?</p>
+                        <label><input type="radio" name="q3" value="a"> 08/02</label><br>
+                        <label><input type="radio" name="q3" value="b"> 31/05</label><br>
+                        <label><input type="radio" name="q3" value="c"> 31/06</label><br>
+                        <label><input type="radio" name="q3" value="d"> 08/12</label><br>
+                </div>
+
+                <div class="perguntaQuiz">
+                    <p>4. Quem é o nosso Co-Padroeiro?</p>
+                        <label><input type="radio" name="q4" value="a"> São João Batista</label><br>
+                        <label><input type="radio" name="q4" value="b"> Santo Afonso</label><br>
+                        <label><input type="radio" name="q4" value="c"> São José</label><br>
+                        <label><input type="radio" name="q4" value="d"> São Paulo</label><br>
+                </div>
+
+                <div class="perguntaQuiz">
+                    <p>5. Quem foi o(a) nosso(a) primeiro(a) padroeiro(a)?</p>
+                        <label><input type="radio" name="q5" value="a"> Nossa Senhora da Assunção</label><br>
+                        <label><input type="radio" name="q5" value="b"> Nossa Senhora da Conceição</label><br>
+                        <label><input type="radio" name="q5" value="c"> Santa Teresinha</label><br>
+                        <label><input type="radio" name="q5" value="d"> São José</label><br>
+                </div>
+
+                <button class="botaoEnviar" type="button" onclick="verificarRespostas()">Enviar</button>
+            </form>
+
+                <div id="resultado" style="display: none;"></div>
         </div>
         
         <footer class="rodape-flex-pc">
@@ -173,7 +202,6 @@
             </nav>
         </footer>
     </div>
-    <script src="script.js"></script>
-    <script src="FiltrarGaleria.js"></script>
+    <script src="script.js"></script><script src="quizParoquia.js"></script>
 </body>
 </html>

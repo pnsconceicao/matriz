@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de fotos P.N.S.C</title>
+    <title>Paróquia N. Sra. da Conceição</title>
     <link rel="icon" type="image/png" href="logos-fotos/LOGOdaPAROQUIA-PNG.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="galeria-styles.css">
@@ -15,7 +15,7 @@
     <div class="container-pagina-completo-grid">
         <div class="logo-paroquia-cabecalho">
             <a class="computer-logo" href="index.html"><img src="logos-fotos/LOGOdaPAROQUIA-PNG.png"></a>
-            <p class="computer-logo">PARÓQUIA <br>NOSSA SENHORA <br>DA CONCEIÇÃO</p>
+            <a class="computer-logo" href="index.html"><p>PARÓQUIA <br>NOSSA SENHORA <br>DA CONCEIÇÃO</p></a>
         </div>
         <header class="cabecalho-flex">
             <ul class="item-nav-cabecalho">
@@ -36,7 +36,8 @@
                                             </ul>
                                 </li>
                                 <li><a href="secretaria.html">Secretaria</a></li><hr>
-                                <li><a href="noticias.html">Notícias</a></li>
+                                <li><a href="noticias.html">Notícias</a></li><hr>
+                                <li><a href="diz.html">Agenda</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -75,7 +76,8 @@
                                 <li><a href="grupos.html">Grupos</a></li><hr>
                                 <li><a href="pastorais.html">Pastorais</a></li><hr>
                                 <li><a href="movimentos.html">Movimentos</a></li><hr>
-                                <li><a href="intencoes.html">Intenções</a></li>
+                                <li><a href="intencoes.html">Intenções</a></li><hr>
+                                <li><a href="quizParoquia.html">QUIZ</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -105,27 +107,9 @@
                     <li class="nav-item"><a href="documentos.html" class="nav-link">Documentos</a></li>
                 </ul>
             </div>
-
+        
         <div class="container-corpo-grid">
-            <div class="bloco-titulo-galeria">
-                <div class="titulo-galeria">
-                    <h2>GALERIA DE FOTOS</h2>
-                </div>
-            </div>
-            <div id="FotosEvento" class="bloco-fotos">
-                <select name="Event" onchange="OnEventUpdate(event)">
-                    <option value="-1">Selecionar</option>
-                    <option value="0">Sábado de Aleluia</option>
-                    <option value="1">Domingo de Ramos 2025</option>
-                    <option value="2">Quaresma da Igreja 2025</option>
-                    <option value="3">Multirão de confissões 2025</option>
-                    <option value="4">Solenidade de São José 2025</option>
-                    <option value="5">Quarta-Feira de Cinzas</option>
-                    <option value="6">Novo Sacrário</option>
-                </select>
-                <h3 id="OptionSelected"></h3>
-                <h3 id="NomeDoEvento"></h3>
-            </div>
+            <!-- Texto do corpo do site -->
         </div>
         
         <footer class="rodape-flex-pc">
@@ -174,6 +158,5 @@
         </footer>
     </div>
     <script src="script.js"></script>
-    <script src="FiltrarGaleria.js"></script>
 </body>
 </html>

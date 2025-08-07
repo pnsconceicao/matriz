@@ -26,13 +26,13 @@ const documentos = [
         titulo: 'Catecismo da Igreja Católica',
         descricao: 'Compêndio oficial e completo da doutrina católica. Essencial para estudo.',
         categoria: 'Doutrina',
-        url: 'docs/catecismo-igreja-catolica.pdf'
+        url: 'https://www.vatican.va/archive/cathechism_po/index_new/prima-pagina-cic_po.html'
     },
     {
         titulo: 'Horários de Missas e Confissões',
         descricao: 'Tabela atualizada com os horários das celebrações na Matriz e Capelas.',
         categoria: 'Informativo',
-        url: 'docs/horarios-missas.pdf'
+        url: 'logos-fotos/AGENDAmensalCOMUNIDADES.jpeg'
     }
 ];
 
