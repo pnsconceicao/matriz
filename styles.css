@@ -274,7 +274,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     align-items: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
     width: auto;
-    height: 450px;
+    height: 430px;
     border-radius: 10%;
     border: solid rgb(144, 61, 10);
     padding: 5px;
@@ -284,7 +284,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
 }
 .texto-sobre-imagem {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-70%, 65%);
     color: white;
@@ -292,7 +292,7 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     padding: 5px 10px;
 }
 .texto-sobre-imagem h1 {
-    font-size: 50px;
+    font-size: 45px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 15%;
@@ -937,14 +937,19 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
         width: 380px;
         margin-bottom: 50px;
     }
-
     .foto-texto figcaption {
         margin-top: 20px;
     }
 
-    .foto-texto img {
-        width: 400px;
-        margin: 5px;
+    .foto-matriz-dentro img {
+        height: 350px;
+    }
+    .texto-sobre-imagem {
+        top: 30%;
+        left: 55%;
+    }
+    .texto-sobre-imagem h1 {
+        font-size: 35px;
     }
 }
 
