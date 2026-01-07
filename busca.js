@@ -5,22 +5,34 @@
 // O 'url' deve ser o caminho correto para o arquivo na pasta 'docs'.
 const documentos = [
     {
-        titulo: 'Diretório Litúrgico 2025',
-        descricao: 'Orientações e calendário para as celebrações litúrgicas do ano de 2025.',
-        categoria: 'Liturgia',
-        url: 'docs/diretorio-liturgico-2025.pdf'
+        titulo: 'Carta convocatória - ASSEMBLEIA PAROQUIAL DE PASTORAL 2026',
+        descricao: 'Convocação para a Assembleia Paroquial de Pastoral a ser realizada no dia 11 de janeiro de 2026.',
+        categoria: 'Informativo',
+        url: 'pdfs/Carta_Convocatoria_Assembleia_Paroquial_2026.pdf'
     },
     {
-        titulo: 'Formulário de Inscrição para Batismo',
-        descricao: 'Ficha cadastral para pais e padrinhos que desejam batizar uma criança.',
-        categoria: 'Sacramentos',
-        url: 'docs/formulario-batismo.pdf'
+        titulo: 'Horários de Missas nas Capelas',
+        descricao: 'Tabela atualizada com os horários das celebrações nas Capelas.',
+        categoria: 'Informativo',
+        url: 'logos-fotos/AGENDAmensalCOMUNIDADES.jpeg'
     },
     {
-        titulo: 'Formulário de Inscrição para Crisma',
-        descricao: 'Ficha cadastral para jovens e adultos que desejam receber o sacramento da Crisma.',
-        categoria: 'Sacramentos',
-        url: 'docs/formulario-crisma.pdf'
+        titulo: 'Notícias P.N.S.C.',
+        descricao: 'Boletim mensal com as principais notícias e eventos da Paróquia Nossa Senhora da Conceição.',
+        categoria: 'Informativo',
+        url: 'https://pnsconceicao.github.io/matriz/noticias.html'
+    },
+    {
+        titulo: 'Vatican News',
+        descricao: 'Notícias oficiais da Igreja Católica diretamente do Vaticano.',
+        categoria: 'Informativo',
+        url: 'https://www.vaticannews.va/pt.html'
+    },
+    {
+        titulo: 'Diocese de Cajazeiras',
+        descricao: 'Site oficial da Diocese de Cajazeiras, com notícias, eventos e informações institucionais.',
+        categoria: 'Tecnologia',
+        url: 'https://diocesedecajazeiras.com.br'
     },
     {
         titulo: 'Catecismo da Igreja Católica',
@@ -29,10 +41,16 @@ const documentos = [
         url: 'https://www.vatican.va/archive/cathechism_po/index_new/prima-pagina-cic_po.html'
     },
     {
-        titulo: 'Horários de Missas e Confissões',
-        descricao: 'Tabela atualizada com os horários das celebrações na Matriz e Capelas.',
-        categoria: 'Informativo',
-        url: 'logos-fotos/AGENDAmensalCOMUNIDADES.jpeg'
+        titulo: 'Bíblia Católica',
+        descricao: 'A Bíblia Sagrada na versão católica diretamente do site oficial do Vaticano.',
+        categoria: 'Doutrina',
+        url: 'https://www.vatican.va/archive/bible/index_po.htm'
+    },
+    {
+        titulo: 'Códigos de Direito Canônico',
+        descricao: 'Códigos oficiais que regem a Igreja Católica, essenciais para estudiosos.',
+        categoria: 'Doutrina',
+        url: 'https://www.vatican.va/archive/cdc/index_po.htm'
     }
 ];
 
