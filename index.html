@@ -112,13 +112,39 @@
             </div>
 
 
-<!--             
-            <div class="foto-matriz-dentro">
-                    <img src="logos-fotos/FotoDentroMatrizPNSC.jpeg" alt=" Foto Igreja Matriz atualizada">
-                <div class="texto-sobre-imagem">
-                    <h1>30ª SEMANA DO TEMPO COMUM</h1>
-                </div>
-            </div><br><br> -->
+
+            <section id="aviso-dizimo" class="aviso-dizimo" style="display:none;">
+                <h3 id="data-atual" style="margin-bottom:10px;"></h3>
+                <h2>2º DOMINGO DO MÊS - DEVOLUÇÃO DO DÍZIMO</h2>
+                <p><i>Como realizar a minha devolução?</i></p>
+                <p>Basta procurar a Igreja Matriz, a Secretaria Paroquial ou, se preferir, após a Santa Missa do 2º Domingo do Mês, às 8h ou às 19h. Deus lhe pague!</p>
+            </section>
+
+            <script>
+                var data = new Date();
+                var dia = data.getDate();
+                var mes = data.getMonth();
+                var ano = data.getFullYear();
+
+                var meses = [
+                    "Janeiro","Fevereiro","Março","Abril","Maio","Junho",
+                    "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"
+                ];
+
+                if (dia >= 5 && dia <= 15) {
+                    var section = document.getElementById("aviso-dizimo");
+                    section.style.display = "block";
+                    document.getElementById("data-atual").innerText = meses[mes] + "/" + ano;
+                }
+            </script>
+
+
+            <section id="sobre-tempo" class="sobre-tempo">
+                <h2>Tempo do Natal depois da Epifania</h2>
+            </section>
+
+
+
 
 
 
