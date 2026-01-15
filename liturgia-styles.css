@@ -154,7 +154,12 @@
     font-size: 30px;
     text-align: center;
 }
-
+.subtitulo-geral h4 {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
 
 
 
