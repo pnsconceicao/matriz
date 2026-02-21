@@ -44,8 +44,10 @@ h1, h2, h3, h4, p, a, li, ul, figcaption {
     text-align: center;
 }
 
+
+/* FONTE DO TEMPO LITURGICO DA PAGINA INICIAL */
 .sobre-tempo h2 {
-    color: #4377e8;
+    color: #88008d;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
