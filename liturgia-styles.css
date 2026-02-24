@@ -224,6 +224,69 @@
     margin-bottom: 50px;
 }
 
+
+
+.bloco-escala-completa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    /* border: solid rgb(75, 0, 0) 5px;
+    border-radius: 10px; */
+}
+.bloco-escala-texto {
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
+    flex-direction: row;
+    margin: 15px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.bloco-escala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+.bloco-escala h3 {
+    font-size: 25px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.bloco-escala h4 {
+    font-size: 22px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    margin: 5px;
+    padding: 0;
+}
+
+.titulo-escala-geral {
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo-escala-geral h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.titulo-escala-geral h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+
 @media (max-width: 490px){
     .calendario-mes a {
         font-size: 15px;
