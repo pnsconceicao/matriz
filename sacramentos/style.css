@@ -46,7 +46,7 @@ p {
 }
 
 .sessao-midia img {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     border-radius: 5px;
 }
@@ -80,4 +80,11 @@ p {
     margin-bottom: 0;
     font-style: italic;
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    .conteudo-principal {
+            max-width: 280px;
+
+    }
 }
