@@ -1,0 +1,202 @@
+/* ESTILOS GERAIS DA PÁGINA DE ESCALAS 
+   Paróquia Nossa Senhora da Conceição
+*/
+
+/* Configurações do Container Principal */
+.container-corpo-grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo interno */
+}
+
+/* Título e Cabeçalho da Seção */
+.secao-titulo {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.secao-titulo h1 {
+    color: #1a202c;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.mes-referencia {
+    color: #718096;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid de Cards - O Segredo da Centralização */
+.escala-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 450px)); 
+    gap: 30px;
+    width: 100%;
+    justify-content: center; /* Centraliza os cards na horizontal */
+    align-content: center;
+}
+
+/* Card que ocupa a largura total (Vigília e Domingo) */
+.card-full {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 930px; /* Largura de dois cards somados + gap */
+    margin: 0 auto;
+}
+
+/* Estilo Base do Card */
+.card-liturgia {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease;
+    height: fit-content;
+}
+
+.card-liturgia:hover {
+    transform: translateY(-5px);
+}
+
+/* Cabeçalho do Card (Cores Litúrgicas) */
+.card-header {
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+}
+
+.color-branca { 
+    background-color: #f7fafc; 
+    border-bottom-color: #cbd5e0; 
+}
+.color-vermelha { 
+    background-color: #fff5f5; 
+    border-bottom-color: #feb2b2; 
+}
+.color-roxa { 
+    background-color: #faf5ff; 
+    border-bottom-color: #d6bcfa; 
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.celebracao-nome {
+    font-size: 0.95rem;
+    margin: 8px 0;
+    color: #4a5568;
+    font-style: italic;
+}
+
+.data-info {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-top: 12px;
+    padding: 4px 12px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #718096;
+    font-weight: 600;
+}
+
+/* Corpo do Card e Listas */
+.card-body {
+    padding: 25px;
+}
+
+.card-body h3 {
+    font-size: 0.85rem;
+    color: #3182ce; /* Azul Destaque */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #ebf8ff;
+    padding-bottom: 10px;
+    margin: 20px 0 15px 0;
+}
+
+.card-body h3:first-child {
+    margin-top: 0;
+}
+
+.lista-leitores {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-leitores li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f7fafc;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between; /* Empurra o nome para a direita */
+    align-items: baseline;
+}
+
+.lista-leitores li:last-child {
+    border-bottom: none;
+}
+
+.lista-leitores li span {
+    font-weight: 800;
+    color: #2d3748;
+    font-size: 0.85rem;
+    margin-right: 15px;
+    min-width: 65px; /* Alinha o início dos nomes */
+}
+
+/* Grid interno para cards largos (Vigília/Domingo) */
+.grid-leitores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    align-items: start;
+}
+
+.sub-secao {
+    width: 100%;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .container-corpo-grid {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .escala-wrapper {
+        grid-template-columns: 1fr; /* Um card por linha no celular */
+    }
+
+    .grid-leitores {
+        grid-template-columns: 1fr; /* Sub-seções empilhadas no celular */
+        gap: 20px;
+    }
+
+    .lista-leitores li {
+        flex-direction: column; /* Nome embaixo do cargo no celular */
+        text-align: left;
+        gap: 4px;
+    }
+
+    .secao-titulo h1 {
+        font-size: 1.5rem;
+    }
+}

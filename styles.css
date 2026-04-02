@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:  rgb(213, 209, 164);
+    /* background-color:  rgb(213, 209, 164); */
+    background-color: #F2F2F2;
 }
 
 h1, h2, h3, h4, p, a, li, ul, figcaption {
@@ -96,7 +97,8 @@ p {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(213, 209, 164);
+    /* background-color: rgb(213, 209, 164); */
+    background-color: #F2F2F2;
 }
 
 .logo-paroquia-cabecalho img{
