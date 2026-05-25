@@ -1,0 +1,82 @@
+/* TEMAS DE CORES */
+.tema-verde { --cor-liturgica: #2e7d32; --cor-versiculo: #2e7d32; }
+.tema-roxo { --cor-liturgica: #6a1b9a; --cor-versiculo: #d32f2f; }
+.tema-vermelho { --cor-liturgica: #c62828; --cor-versiculo: #b71c1c; }
+.tema-branco { --cor-liturgica: #6d7379; --cor-versiculo: #6d7379; }
+
+/* CONTAINER PRINCIPAL */
+.liturgia-container {
+    max-width: 900px;
+    margin: 40px auto; /* Espaço para não grudar no cabeçalho */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.liturgia-cabecalho {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.liturgia-cabecalho h2 { color: #0031A1; font-weight: 800; }
+.info-data h3 { color: var(--cor-liturgica); margin-top: 5px; }
+
+/* ESTILO CNBB: BORDA LATERAL */
+.bloco-leitura {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    border-left: 5px solid var(--cor-liturgica);
+}
+
+.label-leitura {
+    color: var(--cor-liturgica);
+    font-weight: 800;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.subtitulo-italico {
+    font-style: italic;
+    color: #666;
+    margin: 5px 0 15px 0;
+}
+
+.leitura-referencia {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.texto-liturgico p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* VERSÍCULOS COLORIDOS */
+.versiculo {
+    color: var(--cor-versiculo);
+    font-weight: bold;
+    font-size: 0.8rem;
+    vertical-align: super;
+    margin-right: 4px;
+}
+
+/* SALMO */
+.resposta-destaque {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid var(--cor-liturgica);
+    margin-bottom: 20px;
+}
+
+.direitos-cnbb {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9rem;
+}
